@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #d1e8d6; /* Lighter green */
+}
+
+/* Main Content */
+main {
+    padding: 3rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3e8e41;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Links and Buttons */
+a {
+    color: #8e44ad; /* Purple */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5e3370; /* Darker purple */
+}
+
+/* Search Page Specific Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input {
+    padding: 0.8rem;
+    border: 1px solid #8e44ad;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+ul {
+    margin-top: 1.5rem;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    background-color: #f4f7f6;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}

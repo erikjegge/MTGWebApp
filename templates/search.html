@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Search</h1>
+<form method="POST">
+    <label for="query">Enter your search term:</label>
+    <input type="text" id="query" name="query" required>
+    <button type="submit">Search</button>
+</form>
+
+{% if results %}
+<h2>Results</h2>
+<ul>
+    {% for result in results %}
+    <li>{{ result['cardName'] }} - {{ result['filepath'] }} - {{ result['boxCode'] }}</li>
+    {% endfor %}
+</ul>
+{% elif request.method == "POST" %}
+<p>No results found.</p>
+{% endif %}
+{% endblock %}
